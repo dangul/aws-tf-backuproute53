@@ -88,6 +88,14 @@ terraform {
 
 Before running `terraform init`, update the backend values to match your environment. The backend S3 bucket and DynamoDB lock table must already exist.
 
+You can create and manage the Terraform backend resources used by `backend.tf` with the bootstrap repository:
+
+```text
+https://github.com/dangul/aws-tf-bootstrap
+```
+
+That repository can be used to provision the remote state S3 bucket and DynamoDB lock table required by this project.
+
 If you do not want to use a remote backend, remove or modify `backend.tf` before initializing Terraform.
 
 ## Configuration
