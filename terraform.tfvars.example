@@ -1,0 +1,4 @@
+s3_bucket_name     = "my-route53-backups-bucket"
+notification_email = "admin@example.com"
+stack_name         = "route53-backup"
+aws_region         = "eu-north-1"
